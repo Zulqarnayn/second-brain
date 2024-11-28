@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9AEC35CD2CF4950D00937EBD /* Mockable in Frameworks */ = {isa = PBXBuildFile; productRef = 9AEC35CC2CF4950D00937EBD /* Mockable */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		9AEC35BA2CF4865E00937EBD /* second-brain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "second-brain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AEC35CD2CF4950D00937EBD /* Mockable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "second-brain";
 			packageProductDependencies = (
+				9AEC35CC2CF4950D00937EBD /* Mockable */,
 			);
 			productName = "second-brain";
 			productReference = 9AEC35BA2CF4865E00937EBD /* second-brain.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 9AEC35B12CF4865E00937EBD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9AEC35CB2CF4950D00937EBD /* XCRemoteSwiftPackageReference "Mockable" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9AEC35BB2CF4865E00937EBD /* Products */;
 			projectDirPath = "";
@@ -322,6 +331,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9AEC35CB2CF4950D00937EBD /* XCRemoteSwiftPackageReference "Mockable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kolos65/Mockable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.12;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9AEC35CC2CF4950D00937EBD /* Mockable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AEC35CB2CF4950D00937EBD /* XCRemoteSwiftPackageReference "Mockable" */;
+			productName = Mockable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9AEC35B22CF4865E00937EBD /* Project object */;
 }

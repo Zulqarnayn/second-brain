@@ -1,0 +1,33 @@
+{
+  "originHash" : "9265bbf479c8a252a74c8642939d20b3faa91d2e0caca0c50bf5a11c339a2264",
+  "pins" : [
+    {
+      "identity" : "mockable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Kolos65/Mockable",
+      "state" : {
+        "revision" : "84c4f7faf1131e806201fd760cb783bb6cd66282",
+        "version" : "0.0.12"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax.git",
+      "state" : {
+        "revision" : "2bc86522d115234d1f588efe2bcb4ce4be8f8b82",
+        "version" : "510.0.3"
+      }
+    },
+    {
+      "identity" : "xctest-dynamic-overlay",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
+      "state" : {
+        "revision" : "a3f634d1a409c7979cabc0a71b3f26ffa9fc8af1",
+        "version" : "1.4.3"
+      }
+    }
+  ],
+  "version" : 3
+}
