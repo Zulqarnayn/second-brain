@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ArtifactListScreen: View {
     @State private var artifacts: [Artifact] = Artifact.mockList
     
     var body: some View {
@@ -28,6 +28,6 @@ struct ContentView: View {
 
 #Preview {
     NavigationStack {
-        ContentView()
+        ArtifactListScreen()
     }
 }
