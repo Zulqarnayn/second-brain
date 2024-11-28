@@ -2,8 +2,6 @@
 
 An iOS app to collect and organize your reading list.
 
-![Second Brain App Screenshot](Screenshots/light-mode.png)
-
 ## Features
 
 - Collect articles and web content
