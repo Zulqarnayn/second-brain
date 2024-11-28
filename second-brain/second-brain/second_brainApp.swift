@@ -11,7 +11,7 @@ import SwiftUI
 struct second_brainApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ArtifactListScreen()
         }
     }
 }

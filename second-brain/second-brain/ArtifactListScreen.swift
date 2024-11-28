@@ -11,7 +11,7 @@ struct ArtifactListScreen: View {
     @State private var artifacts: [Artifact] = Artifact.mockList
     
     var body: some View {
-        List(artifacts) { artifact in
+		List($artifacts) { $artifact in
 			ArtifactListRowView(
 				title: artifact.siteName ?? "",
 				subtitle: artifact.title ?? "",
@@ -20,6 +20,24 @@ struct ArtifactListScreen: View {
 				isRead: artifact.isRead,
 				isFlagged: artifact.isStarred
 			)
+			.swipeActions(edge: .leading) {
+				Button {
+					artifact.isRead.toggle()
+				} label: {
+					Label(
+						artifact.isRead ? "Unread" : "Read",
+						systemImage: artifact.isRead ? "envelope.fill" : "envelope.badge.fill"
+					)
+				}
+			}
+			.swipeActions {
+				Button(role: .destructive) {
+					artifacts.removeAll { $0.id == artifact.id }
+				} label: {
+					Label("Delete", systemImage: "trash")
+				}
+
+			}
         }
         .listStyle(.plain)
         .navigationTitle("Inbox")
